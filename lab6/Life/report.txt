@@ -1,0 +1,25 @@
+//Xavier Briggs
+//report.txt
+//03/08/24
+
+User Perspective:
+    From the users perspective this program works in two modes, either interactive or batch mode. Interactive mode is triggered by the user just running the executable
+    if just the executable is ran then the program goes into interactive mode and a command prompt is prompted. The user will then see a blank board and command line to enter
+    their commands. If the user enters an a followed by two integers the program puts an X at that location. if the user enters a r followed by two integers the program adds a 
+    blank space at that location. If the user enters n then the Conway's simplifed game of life rules are applied to the board and a new board is printed. If the user 
+    enters a p then the program will constanly apply the game of life rules infinitly. To exit the user enters q. 
+Programmers perspective:
+    From the programmers perspective this program is split into three files. One file that is the main driver, the header function, and then the function file. 
+    The main driver file is responsible for housing the intial requriments needed for the rest of the program to function. This is where argc and argv are to read in user input
+    and then act accordinglyy. if argc is one then interactive mode is called, if argc is 2 then batch mode is called, and if its greater then 2 the program responds with an error.
+    The main function also intializes two 2d char arrays that are the game boards. The program then uses the life function file. In the life function file there are 6 functions
+    The first two functions are the interactive mode and the interactive file mode. The interactive mode runs the program with the ability for user input by using scanf and then prints new board.
+    interactive file mode is basically batch mode that reads in data from a file and then either adds and X or space in the array. At the end of each function there is an option
+    to apply the rules of the game to the game board infinitly. This is a branch on the if statment. The next two functions are to initialize the game board array with blank spaces
+    and one to just print the array. The function get_initial board is the initialize function and the get_newboard prints the game board based on the board array that is passed to it. 
+    The last two functions are responsible for applying to rules of the game to the current array. The life_iteration function applies the rules
+     (a cell with 3 living neighbors becomes alive and a living cell with atleast 2 but no more then 3 survives). After the rules are applied the cell either becomes alive or dies. 
+     last function game_rules is responsible for counting how many neighboring cells are alive. It then returns a count value that is the number of alive neighboring cells. 
+Verification: 
+To verify the output I inputed values in my own program and then cross checked them with the executable provided in the Exec directory. For the different scenes I used https://blog.xojo.com/2022/05/11/conways-game-of-life/ 
+to get different shapes that I knew what the outcome should look like. 

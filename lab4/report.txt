@@ -1,0 +1,22 @@
+//Xavier Briggs
+//Report.txt
+//02/17/24
+
+Users Persepctive:
+From the users perspective when the program is ran a menu is prompted to the user. The user has 5 choiceeach one perfoming a different desired task. 
+The user selects a choice by entering a number 1-6 (6 to exit) and the program prompts the next sequence based on that choice. 
+From there the user will either input a desired year, num wins/losses, or year range based on the choice made above. The program then responds by outputting the desired data to the user. 
+The menu is then re prompted asking the user if they would like to use it again. 
+
+Programmers perspective:
+This program is comprised of void functions and main. Inside the main function there is a while loop that will run while the user does not enter 6 which makes the menu reprompt everytime the program is used.
+Inside the while loop there are if statments to determine which function to call based on user input. There are five functions one for each choice. One function gets the number of wins and losses in a year.
+The second function gets the years a certain number of wins is reached. The third does the same as the second but with losses. THe fourth gets the average number of wins from a desired year range. 
+The fifth does the same as the fourth but just losses. These functions utilize for loops and the win loss arrays. In these for loops the arrays are either checked to see equality with user input or summed for 
+average. To exit the program there is an if statment corresponding to the endcase which the user calls when they want to exit the program
+
+Verification:
+To verify my results I checked my output with the example given in the lab. I also hand checked the data by looking through the array and making sure it matched accordingly. To check the averages I used an 
+online calculator that handles mass data. 
+
+

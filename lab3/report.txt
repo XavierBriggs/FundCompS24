@@ -1,0 +1,17 @@
+//Xavier Briggs
+//Report.Txt
+//02/08/24
+
+User Perspective:
+From the users perspective this program is a basic arithmatic calculator. As the user you are prompted 5 choices 1 for addition, 2 for subtraction, 3 for multiplication
+4 for division, and 5 to exit the program. After this input is recorded the program prompts the user to enter two numbers that they want to perform the selected arithimatic on. After the two numbers
+are inputed the program displays the result of those two numbers and the option that the user selected. For example if the user wanted to add 6 and 4 together they would simply press 1 for addition and then
+input 6 and 4 the program would then respond with the answer of the sum of those two which is 10. This process is repeated until the user enters choice 5 to exit the program. 
+
+Programmers Perspective:
+From the programmers perspective, this program starts by defining a prototype function for each arithmatic option it then uses a while loop inside of the main function to repeat prompting the user
+for their desired math option. Inside the while loop there are if statments to check what the users choice is to decide which function needs to be called. The math of this program is calculated in
+four user defined functions that each deal with a math option individually. After the math is calculated they return the desired value to where they were called and the result is printed. There are additional
+if statments to check if the denonmenator in the division function is zero which results in an invalid message displaying. 
+
+How did I check: To check this program's accuracy I used a Ti-84 calculator to calculate the accuracy of each function which different numbers.

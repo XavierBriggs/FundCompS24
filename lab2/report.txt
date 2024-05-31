@@ -1,0 +1,17 @@
+//Xavier Briggs
+//Fundamentals of Computing
+//February 04, 2024
+
+Users Perspective:
+From the users perspective after the code is intiated by the user. After this it prints a graph plot of the hard coded equation (1+cos(x))*20 starting at 0 and stoping when it gets to the x range 20.
+It displays the graph through hastags to represent what it would look like in a graphing software
+
+Programmers perspective:
+From the programmers perspective this program uses a while loop and nested for loop with several if statments. Also in the program are variables to store the x max, x min, y max, and y min values.
+The while loop checks if the x value is lower then the range set by the user and then runs the loop. 
+Inside the while loop there are if statments to compare the current y and x value to the current xmax, xmin, ymin, ymax and then saves the corresponding y and x to the correct maximum and minimum.
+also in the loop is the function that calculates the desired y value.
+inside the nested for loop the hastag is printed one time for every y value. 
+
+To verify this program I used desmos to enter my function and then inputed different x values to check what the graph should look like. 
+

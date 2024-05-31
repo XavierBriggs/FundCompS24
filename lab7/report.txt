@@ -1,0 +1,27 @@
+//Xavier Briggs
+//Report.txt
+//March 25, 2024
+
+User Perspective: 
+From the user perspective the program begins by prompting the user to input the name of the file they want to be read. 
+If the file can be found the program will display the startup menu. If it can not be found the user will be prompted to enter
+their file name again, until a file is found. The startup menu contains four choices, these choices are to list a states info
+based on an inputted abbrevation, list the capital of a state based on its name, list states after a user inputted char, and 
+list the first state that joined in a given year. For each of these choices the user selects them with a num and then follows the directions
+on screen. Each of these options will re prompt the menu if the user inputs something not valid. To exit the progam the user enters 
+the exit choices
+
+Programmers Perspective; 
+From the programmers perspective the program is split into three main files, the main file, functions file, and header file. The header
+file is where the function prototypes as well as the struct definition to hold state info are. In the main file the program creates an 
+array of structs to hold the information of each state it then prompts the user to enter their file name and attempts to open it. It uses 
+a while loop and if statements to keep looping this as long as the user inputted file can not be found. When the file is found it calls 
+the readfile function and display menu function to start the program. Inside the display menu function there is a while loop that prompts 
+the user for a choice and then calls the needed function based on thatchoice. The functions file contains each of the functions inside the
+choices and takes advantage of for loops to loop through all of the states and return either the desired index or display the desired state.
+The display menu function is then re-prompted until the user selects the exit case. 
+
+Verification: 
+To verify that the program was correct I tested each choice and function individually to make sure that I was getting the desired output. 
+After I was done verifying the results of one choice by cross-checking it with writing out the answer by hand I then moved on to the next one. 
+I repeated this step until my progam was finished. 

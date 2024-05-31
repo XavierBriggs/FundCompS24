@@ -1,0 +1,16 @@
+User Perspective:
+From the user perspective this program prompts the user to input the name of a text file or startup to load a set amount of personal sayings
+into the programs database. After this is done the program prompts the user with a menu that has options for manipulating the inputed sayings. 
+The options are display all sayings in the database, add a saying to the database, search for a substring in the database, and save all sayings
+in the database to a new file. What ever option the user picks the program then responds accordingly and does what the user desires. 
+
+Programers perspective: 
+From the programmers perspective this program takes advantage of FILE pointers to allow the user to open a text file and then loads the strings
+from the text file into a 2d char array that holds one saying per index. It uses the fgets function to read a string at a time from the userFile
+and then stores it into a 1d array to verify input and finally loads it into the 2d array. For the different options the program takes advantage 
+of the string.h library to calculate the stringlen, compare strings, loading new sayings into the database. The different options are each a different 
+function with each option corresponding to one of the functions in the program. 
+
+Checking: 
+To check for accuarcy I tested my program with the provided executuble and startup file to see if my program would output a similar result which it did. 
+I also tested my program by letting other people try the program to see if it resulted in the desired outcome. 

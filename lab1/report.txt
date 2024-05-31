@@ -1,0 +1,9 @@
+Users Persepective:
+From The users perspective program 2 is designed to calculate the volume of a right cylinder. If the user needed to calculate volume and knew the height and radius of their cylinder this program would take
+those inputs and calculate volume. 
+Programmers Perspective:
+From the programmers perspective this program is structured by first defining variables height and radius(rad), then user input with the scanf function, thirdly the program calculates the volume by using the
+formula for the volume of a right cylinder v=pir^2h and uses the pi function M_PI and pow  in the c math library to calculate the value of the volume. 
+Program Correctness:
+When evalutating the program for correctness I used a Ti-84 calculator to  test a range of values for both height and radius and compared it with my program's value. I have not found any cases where the
+program doesn't work although I would like to exclude the use of negative numbers when calculating volume in the future.  
